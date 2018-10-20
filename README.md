@@ -1,2 +1,2 @@
-## [blog](https://wangbo.github.io/blog)
+# [blog](https://wangbo.github.io/blog)
 
