@@ -1,1 +1,17 @@
-theme: jekyll-theme-architect
+# Site settings
+title: WangBo Blog
+description: >
+    WangBo Blog
+author: WangBo
+email: 506340561@qq.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://wangbo.github.io" # the base hostname & protocol for your site
+twitter_username: 
+github_username:  wangbo
+
+# Build settings
+include: [_pages]
+markdown: kramdown
+permalink: /:year/:month/:title
+sass:
+    style: compressed
