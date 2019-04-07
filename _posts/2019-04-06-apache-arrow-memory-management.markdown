@@ -4,10 +4,8 @@ title:  "Apache Arrow Memory Management"
 date:   2019-04-06
 categories: jekyll update
 ---
-
 * 目录
 {:toc}
-
 # Apache Arrow简介
 Apache Arrow是为内存中的数据设计的跨语言开发平台。主要特点是定义了列存数据在物理内存中的布局。除此之外，Arrow还定义了元数据规范，数据类型，进程间通信以及内存管理等模块并提供了相应的代码实现。
 
@@ -27,16 +25,16 @@ Arrow中基本存储单元，从OS层面来看，是一片连续的内存区域�
 
 ## 示例
 ### 数组类型
-图1
+![avatar](https://raw.githubusercontent.com/wangbo/wangbo.github.io/master/_posts/image/p1.png)
 
 - 查找一组数据中的第n个元素
     - value array起始偏移量 = offset array[n - 1]
     - value array终止偏移量 = value array起始偏移量 + offset array[n] - 1
 
 ### 结构体
-图2
+![avatar](https://raw.githubusercontent.com/wangbo/wangbo.github.io/master/_posts/image/p1.png)
 
-- 结构体的每个字段都被作为一个数组存储到一片连续的内存区域，以此可以实现更加复杂的数据结构；但是嵌套层级越多，相应的寻址时间也会增加。
+- 结构体的每个字段都被作为一个数组存储到一片连续的内存区域，以此可以实现更加复杂的数据结构；但是嵌套层级越多，相应的查找数据的时间也会线性增加。
 
 ## 对齐与填充
 由于Arrow是基于内存地址的内存分配，因此连续内存区域的大小推荐都是8的倍数，推荐值为64字节。主要是面向硬件层次的优化，例如CPU缓存友好，可以更有效的利用SIMD寄存器特性。
