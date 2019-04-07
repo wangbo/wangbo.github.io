@@ -7,6 +7,7 @@ layout: page
         <p class="c-article__time"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
     </header>
     <div class="c-article__main">
+        <div id="toc"></div>
         {{ content }}
     </div>
     <footer class="c-article__footer">
@@ -17,3 +18,11 @@ layout: page
         </p>
     </footer>
 </article>
+
+<script src="/js/toc.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#toc').toc();
+    });
+</script>
