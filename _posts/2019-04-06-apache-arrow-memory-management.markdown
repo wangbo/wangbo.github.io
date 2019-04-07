@@ -4,7 +4,10 @@ title:  "Apache Arrow Memory Management"
 date:   2019-04-06
 categories: jekyll update
 ---
+
+* 目录
 {:toc}
+
 # Apache Arrow简介
 Apache Arrow是为内存中的数据设计的跨语言开发平台。主要特点是定义了列存数据在物理内存中的布局。除此之外，Arrow还定义了元数据规范，数据类型，进程间通信以及内存管理等模块并提供了相应的代码实现。
 
