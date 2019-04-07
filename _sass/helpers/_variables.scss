@@ -4,8 +4,10 @@
 
 // Colors via http://ethanschoonover.com/solarized
 $c-base__03: #0D2B35;
-$c-base__02: #163541;
-$c-base__01: #5C6E74;
+//$c-base__02: #163541;
+$c-base__02: #000000;
+//$c-base__01: #5C6E74;
+$c-base__01: #163541;
 $c-base__00: #697B82;
 $c-base__0: #869395;
 $c-base__1: #96A0A0;
@@ -13,9 +15,10 @@ $c-base__2: #EDE7D6;
 $c-base__3: #FCF5E4;
 $c-base__4: #000000;
 
-$c-accent__blue: #0067FB;
+//$c-accent__blue: #0067FB;
 $c-accent__green: #8BE367;
 $c-accent__blue2: #268bd2;
+$c-accent__blue: #268bd2;
 
 // Breakpoints
 $bp__sm: 45rem; // 450px
