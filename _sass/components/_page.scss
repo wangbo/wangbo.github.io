@@ -12,7 +12,7 @@
     h1 {
         margin-bottom: 2.5rem; // 25px
         @include fs--heading-2;
-        color: $c-base__02;
+        color: $c-base__4; //title color
     }
 
     p {
@@ -39,6 +39,6 @@
             align-items: center;
     p {
         @include fs--body;
-        color: $c-base__01;
+        color: $c-base__02; //content color
     }
 }
